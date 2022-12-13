@@ -118,12 +118,12 @@ function App() {
 
           <div className="pt-5">
             <div className="flex items-center justify-start">
-              {overage ? (
+              {overageLabel ? (
                 <>
                   <p className="mr-2 text-sm font-medium text-gray-700">
                     {overageLabel}
                   </p>
-                  {navigator.clipboard ? (
+                  {navigator.clipboard && overage ? (
                     <button
                       type="button"
                       className="inline-flex items-center rounded border border-gray-300 bg-white px-2.5 py-1.5 text-xs font-medium text-gray-700 shadow-sm hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
